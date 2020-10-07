@@ -15,7 +15,7 @@
 - Framer Motion 🎨
 
 ## ❓ About
-This app was made for educational purposes in the mobile front-end development part, it has no connection with the Typeform brand.
+This app was made for educational purposes in the web front-end development part, it has no connection with the Typeform brand.
 
 ## 💪 How you can contribute
 - Leave a ⭐ on this repo!
