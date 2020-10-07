@@ -1,11 +1,17 @@
-import React from 'react';
+import React from 'react'
 
-import { Container } from './styles';
+import { useTransform, useViewportScroll } from 'framer-motion'
+
+import { Container } from './styles'
 
 const Header: React.FC = () => {
-  return (
-    <Container />
-  );
-};
+  const { scrollYProgress } = useViewportScroll()
 
-export default Header;
+  const headerY = useTransform(scrollYProgress, [0.047, 0.093], ['0%', '-100%'])
+
+  return (
+    <Container style={{ y: headerY }} />
+  );
+}
+
+export default Header
