@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import FirstAndSecond from './components/FirstAndSecond'
 
 import { Main, Section, Sticky } from './styles'
 import GlobalStyle from './styles/global'
+import Header from './components/Header'
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
   return (
     <>
       <GlobalStyle />
+
+      <Header />
 
       <Main style={{ height: '1610vh' }}>
         <Section style={{ height: '72.7%' }}>
